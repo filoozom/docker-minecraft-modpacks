@@ -6,22 +6,22 @@
 
 ## Environment variables
 
-| Name              | Required   | Default            | Description                                         |
-| ----------------- | ---------- | ------------------ | --------------------------------------------------- |
-| `MODPACK_ID`      | `true`     | ID of the modpack  | ID of the modpack, found on FTB or CurseForge       |
-| `MODPACK_VERSION` | `false` \* | latest             | Version of the modpack                              |
-| `EULA`            | `true`     | `false`            | Accept Minecraft's EULA                             |
-| `MOTD`            | `false`    | -                  | Message Of The Day (`server.properties`)            |
-| `LEVEL`           | `false`    | -                  | Level (`server.properties`)                         |
-| `LEVEL_TYPE`      | `false`    | -                  | Level type (`server.properties`)                    |
-| `OPS`             | `false`    | -                  | Operators (`ops.txt`)                               |
-| `USER_UID`        | `false`    | `567`              | Linux user id of the running user (`minecraft`)     |
-| `USER_GID`        | `false`    | `567`              | Linux group id of the running user (`minecraft`)    |
-| `MIN_RAM`         | `false`    | depends on modpack | Minimum amount of RAM allocated to the JVM (`-Xms`) |
-| `MAX_RAM`         | `false`    | depends on modpack | Maximum amount of RAM allocated to the JVM (`-Xmx`) |
-| `JAVA_ARGS`       | `false`    | -                  | General Java arguments (advanced)                   |
+| Name              | Required   | Default            | Description                                                                          |
+| ----------------- | ---------- | ------------------ | ------------------------------------------------------------------------------------ |
+| `MODPACK_ID`      | `true`     | ID of the modpack  | ID of the modpack, found on FTB or CurseForge                                        |
+| `MODPACK_VERSION` | `false` \* | latest             | Version of the modpack. Set to `--curseforge` if it's a CurseForge pack and not FTB. |
+| `EULA`            | `true`     | `false`            | Accept Minecraft's EULA                                                              |
+| `MOTD`            | `false`    | -                  | Message Of The Day (`server.properties`)                                             |
+| `LEVEL`           | `false`    | -                  | Level (`server.properties`)                                                          |
+| `LEVEL_TYPE`      | `false`    | -                  | Level type (`server.properties`)                                                     |
+| `OPS`             | `false`    | -                  | Operators (`ops.txt`)                                                                |
+| `USER_UID`        | `false`    | `567`              | Linux user id of the running user (`minecraft`)                                      |
+| `USER_GID`        | `false`    | `567`              | Linux group id of the running user (`minecraft`)                                     |
+| `MIN_RAM`         | `false`    | depends on modpack | Minimum amount of RAM allocated to the JVM (`-Xms`)                                  |
+| `MAX_RAM`         | `false`    | depends on modpack | Maximum amount of RAM allocated to the JVM (`-Xmx`)                                  |
+| `JAVA_ARGS`       | `false`    | -                  | General Java arguments (advanced)                                                    |
 
-\* but highly recommended so it doesn't automatically update on restart
+\* Highly recommended so it doesn't automatically update on restart. Also required for CurseForge modpacks.
 
 # Security
 
