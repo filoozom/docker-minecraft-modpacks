@@ -79,6 +79,10 @@ then
 	sed -i "s/-Xmx[^ ]*/-Xmx${MAX_RAM}/g" ./run.sh
 fi
 
+# The user re-creation is done on every restart to allow for uid and gid changes
+# Remove previous unprivileged user
+deluser minecraft 2>/dev/null || true
+
 # Create the unprivileged user and change permissions
 addgroup -S -g ${USER_GID:-567} minecraft
 adduser -h /server -G minecraft -s /bin/ash -S -D -H -u ${USER_UID:-567} minecraft
