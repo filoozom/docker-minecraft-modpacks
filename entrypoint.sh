@@ -11,7 +11,7 @@ fi
 # Install the modpack if it's a different version
 # The installer: https://github.com/CreeperHost/modpacksch-serverdownloader
 MODPACK_STRING="$MODPACK_ID-$MODPACK_VERSION"
-INSTALLER_URL="https://api.modpacks.ch/public/modpack/$MODPACK_ID/$MODPACK_VERSION/server/linux"
+INSTALLER_URL="https://api.modpacks.ch/public/modpack/0/0/server/linux"
 
 if [ "$MODPACK_STRING" != "$(cat /server/modpack 2>/dev/null)" ]
 then
