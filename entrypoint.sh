@@ -54,9 +54,9 @@ then
 	sed -i "/level-name\s*=/ c level-name=$LEVEL" server.properties
 fi
 
-if [[ -n "$LEVELTYPE" ]]
+if [[ -n "$LEVEL_TYPE" ]]
 then
-	sed -i "/level-type\s*=/ c level-type=$LEVELTYPE" server.properties
+	sed -i "/level-type\s*=/ c level-type=$LEVEL_TYPE" server.properties
 fi
 
 # Operators
