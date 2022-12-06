@@ -42,5 +42,5 @@ docker run -d \
   -e MODPACK_ID=100 \
   -e EULA=true \
   -v $(pwd)/data:/server \
-  filoozom/minecraft-modpacks
+  ghcr.io/filoozom/docker-minecraft-modpacks
 ```
