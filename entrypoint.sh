@@ -71,12 +71,12 @@ echo "$JVM_ARGS" > user_jvm_args.txt
 # Min and max ram
 if [[ -n "$MIN_RAM" ]]
 then
-	sed "s/-Xms[^ ]*/-Xms${MIN_RAM}/g" /run.sh
+	sed -i "s/-Xms[^ ]*/-Xms${MIN_RAM}/g" ./run.sh
 fi
 
 if [[ -n "$MAX_RAM" ]]
 then
-	sed "s/-Xmx[^ ]*/-Xmx${MAX_RAM}/g" /run.sh
+	sed -i "s/-Xmx[^ ]*/-Xmx${MAX_RAM}/g" ./run.sh
 fi
 
 # Create the unprivileged user and change permissions
